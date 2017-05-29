@@ -2,25 +2,32 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>cahee</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<section class="slide">
+	<section class="slide" id="home">
+
 		<header class="slide__h">
-			<div class="slide__h-logo">
-				<img src="img/logo.png" alt="logo"/>
-			</div>
-			<div class="slide__h-menu">
-				<a href="#" class="slide__h-menu-item">home</a>
-				<a href="#about" class="slide__h-menu-item">about</a>
-				<a href="#services" class="slide__h-menu-item">services</a>
-				<a href="#gallery" class="slide__h-menu-item">gallery</a>
-				<a href="#blog" class="slide__h-menu-item">blog</a>
-				<a href="#contact" class="slide__h-menu-item">contact</a>
+			<div class="container">
+				<div class="slide__h-logo">
+					<img src="img/logo.png" alt="logo"/>
+				</div>
+
+				<div class="slide__h-menu">
+					<a href="#home" class="slide__h-menu-item">home</a>
+					<a href="#about" class="slide__h-menu-item">about</a>
+					<a href="#services" class="slide__h-menu-item">services</a>
+					<a href="#gallery" class="slide__h-menu-item">gallery</a>
+					<a href="#blog" class="slide__h-menu-item">blog</a>
+					<a href="#contact" class="slide__h-menu-item">contact</a>
+				</div>
 			</div>
 		</header>
+		
+
 		<div class="slide__cnt">
 			<div class="slide__cnt-content">
 				<h2 class="slide__cnt-title">Fresh Life</h2>
@@ -35,10 +42,10 @@
 		<section class="slide-2" id="about">
 			<div class="slide-2__cnt">
 				<div class="slide-2__img">
-					<img src="img/img2.png" alt="img"/>
+					<img src="img/img2.png" class="berry" alt="img"/>
 				</div>
+				<h1>About Us</h1>
 				<div class="slide-2__cnt-content">
-					<h1>About Us</h1>
 					<p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
 					<p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
 				</div>
@@ -53,9 +60,9 @@
 					<a class="slide-3__cnt-links-item item-3" href="#"><span>Domestic &amp; International Delivery</span><img src="img/icon.png"></a>
 					<a class="slide-3__cnt-links-item item-4" href="#"><span>Well Organized</span><img src="img/icon3.png"></a>
 				</div>
+				<h1>Our Services</h1>
 				<div class="slide-3__cnt-content">
 					<img src="img/img-copy.png"/>
-					<h1>Our Services</h1>
 				</div>
 			</div>	
 		</section>
@@ -96,38 +103,48 @@
 				<p class="slide-6__blog-dscr">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
 				<div class="row">
 					<div class="col-4">
+					<div class="img-descr">
 						<img src="img/smoothie.png" alt="img"/>
+						
 						<div class="slide-6__calendar">
 							<div class="slide-6__calendar-date">20</div>
 							<div class="slide-6__calendar-month">NOV</div>
 						</div>
-						<div class="slide-6__link">
-							<a href="#">Green Smoothies: Too Much of a Good Thing?</a>
-							<p class="slide-6__link-dscr">By Auskteez - 2 hours ago</p>
+						
+							<div class="slide-6__link">
+								<a href="#">Green Smoothies: Too Much of a Good Thing?</a>
+								<p class="slide-6__link-dscr">By Auskteez - 2 hours ago</p>
+							</div>
 						</div>
 					</div><!--  col-4 -->
 
 					<div class="col-4">
+					<div class="img-descr">
 						<img src="img/grow.png" alt="img"/>
 						<div class="slide-6__calendar">
 							<div class="slide-6__calendar-date">14</div>
 							<div class="slide-6__calendar-month">NOV</div>
 						</div>
+						
 						<div class="slide-6__link">
 							<a href="#">Growing Food and a “Thirst” for Innovation</a>
 							<p class="slide-6__link-dscr">By Auskteez - 3 hours ago</p>
 						</div>
+						</div>
 					</div><!--  col-4 -->
 
 					<div class="col-4">
+					<div class="img-descr">
 						<img src="img/pesticidies.png" alt="img"/>
 						<div class="slide-6__calendar">
 							<div class="slide-6__calendar-date">10</div>
 							<div class="slide-6__calendar-month">NOV</div>
 						</div>
+						
 						<div class="slide-6__link">
 							<a href="#">Pesticides &amp; Food: What You Need to Know</a>
 							<p class="slide-6__link-dscr">By Auskteez - 6 hours ago</p>
+						</div>
 						</div>
 					</div><!--  col-4 -->
 				</div>
@@ -140,32 +157,34 @@
 				<h1>Contact</h1>
 				<p class="slide-7__discr">For new projects, ideas, business or anything
 					you'd like to discuss, contact with me!</p>
-				<!-- <div class="slide-7__form"> -->
-				<form class="slide-7__form" action="" name="info">
-					<input type="text" name="name" placeholder="Your name...">
-					<input type="email" name="mail" placeholder="Your email...">
-					<input type="text" name="phone-number" placeholder="Your phone number...">
-					<textarea placeholder="Your massege..."></textarea>
-					<button>SEND</button>
-				</form>
-				<div class="slide-7__cont-info">
-					<p>ADDRESS<span class="slide-7__cont-info--light">123 City name, Street, City, Country</span></p>
-					<p>EMAIL<a href="mailto:cahee@domain.com">cahee@domain.com</a></p>
-					<p>PHONE<a href="<#!-- tel:+0123456789 -->">+012 345 6789</a></p>
+					<!-- <div class="slide-7__form"> -->
+					<form class="slide-7__form" action="" name="info">
+						<input type="text" name="name" placeholder="Your name...">
+						<input type="email" name="mail" placeholder="Your email...">
+						<input type="text" name="phone-number" placeholder="Your phone number...">
+						<textarea placeholder="Your massege..."></textarea>
+						<button>SEND</button>
+					</form>
+					<div class="slide-7__cont-info">
+						<p>ADDRESS<span class="slide-7__cont-info--light">123 City name, Street, City, Country</span></p>
+						<p>EMAIL<a href="mailto:cahee@domain.com">cahee@domain.com</a></p>
+						<p>PHONE<a href="<#!-- tel:+0123456789 -->">+012 345 6789</a></p>
+					</div>
+					<!-- </div> -->
 				</div>
-				<!-- </div> -->
+			</section>
+		</main>
+		<footer>
+			<div class="footer__cnt">
+				<p class="footer__p-1">&copy; 2015 Company. All right reserved.</p>
+				<a href="#"><img src="img/logo-small.png"></a>
+				<p class="footer__p-2">Made with <span>love</span> by Auskteez</p>
+
 			</div>
-		</section>
-	</main>
-	<footer>
-		<div class="footer__cnt">
-			<p class="footer__p-1">&copy; 2015 Company. All right reserved.</p>
-			<a href="#"><img src="img/logo-small.png"></a>
-			<p class="footer__p-2">Made with <span>love</span> by Auskteez</p>
-			
-		</div>
-	</footer>
+		</footer>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-</body>
-</html>
+		<script src="js/main.js"></script>
+	</body>
+	</html>
