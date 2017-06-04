@@ -839,10 +839,6 @@ footer a{
 
 @media(max-width: 960px){
 	
-.slide__h{
-	display: none;
-}
-
 .slide__h-logo{
 	width: 15%;
 }
@@ -1051,6 +1047,11 @@ footer a{
 }
 
 @media(max-width: 768px){
+
+.slide__h{
+	display: none;
+}
+
 .slide__cnt{
 	text-align: center;
 }
@@ -1393,3 +1394,4 @@ footer a{
 }
 
 }
+
