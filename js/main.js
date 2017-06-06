@@ -7,9 +7,13 @@ $('.slide__h-menu').on('click', 'a', function(even){
 	}, 500);
 });
 
-// $(document).ready(function(){
-// 	$('.slide-4:has(a)').css('background','green');
-// });
+$('.slide__next-link').click(function(){
+	var link = $(this).attr('href');
+	var distanse = $(link).offset().top;
+	$('html, body').animate({
+		scrollTop: distanse
+	}, 500);
+});
 
 $(window).scroll(function(){
 	var distanse_menu = $('#about__us').offset().top;
@@ -21,15 +25,30 @@ $(window).scroll(function(){
 	}
 });
 
+$('#show-menu').on('click', function(){
+	if($('.slide__h-menu').hasClass('open')){
+		$('.slide__h-menu').removeClass('open');
+		$('#show-menu').find('span')
+		.removeClass('icon-cross')
+		.addClass('icon-menu');
+	}else{
+		$('.slide__h-menu').addClass('open');
+		$('#show-menu').find('span')
+		.removeClass('icon-menu')
+		.addClass('icon-cross');
+	}      
+});
 
-// $('.berry').hide();
+$(window).resize(function(){
+	if ($(window).width() > 768){
+		if($('.slide__h-menu').hasClass('open')){
+			$('.slide__h-menu').removeClass('open')
+			$('#show-menu').find('span')
+			.removeClass('icon-cross')
+			.addClass('icon-menu');
+		}
+	}
+});
 
-// $(window).scroll(function(){
-// 	var berry = $('#about__us').offset().top;
-// 	if ($(window).scrollTop() > berry){
-// 		$('.berry').show(1000);
-// 	}
-// 	else {
-// 		$('.berry').hide();
-// 	}
-// });
+
+
