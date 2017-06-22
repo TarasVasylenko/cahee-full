@@ -4,7 +4,7 @@ $('.slide__h-menu').on('click', 'a', function(even){
 	var distanse = $(link).offset().top;
 	$('html, body').animate({
 		scrollTop: distanse
-	}, 500);
+	}, 600);
 });
 
 $('.slide__next-link').click(function(){
@@ -14,6 +14,15 @@ $('.slide__next-link').click(function(){
 		scrollTop: distanse
 	}, 500);
 });
+
+$('.footer__logo').on('click', function(){
+	var link = $(this).attr('href');
+	var distanse = $(link).offset().top;
+	$('html, body').animate({
+		scrollTop: distanse
+	}, 700);
+});
+
 
 $(window).scroll(function(){
 	var distanse_menu = $('#about__us').offset().top;
